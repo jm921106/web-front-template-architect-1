@@ -1,0 +1,109 @@
+//  AVOIR Variables
+// =========================
+// =========================
+
+// Colors
+// =========================
+
+// General
+$brand-primary: #E74C3C;
+$brand-secondary: #2b2b2b;
+$brand-2-primary: darken($brand-primary, 1%);
+
+$loader-background: #2A2826;
+
+// Links
+$link-color: $brand-primary;
+$link-color-hover: $brand-primary;
+
+// Header 
+$header-bgcolor: #fdfdfd;
+$header-link-color: #fdfdfd;
+$header-link-color-hover: $brand-primary;
+$header-txtcolor: #fdfdfd;
+
+$hamburger-icon-color: #fdfdfd;
+$sidebar-menu-background: darken($brand-secondary, 5%);
+$sidebar-menu-link-color: #fdfdfd;
+$sidebar-menu-link-color-hover: $brand-primary;
+
+// Sections
+$section-white: #fff;
+$section-white-text: #1C140D;
+
+$section-semi-white: lighten(#F2E9E1, 6%);
+$section-semi-white-text: #1C140D;
+
+$section-black: #2b2b2b;
+$section-black-text: #fdfdfd;
+
+$section-banner: lighten(#2b2b2b, 2%);
+$section-banner-text: #fdfdfd;
+
+$section-overlay-color: #1C140D;
+
+// Navbar
+$navbar-link-color: #000;
+$navbar-link-color-hover: $brand-primary;
+
+// Map
+$background-map-label: rgba(23,23,32,.7);
+
+// Typography
+$text-color: #1C140D;
+$text-color-alternative: #fff;
+
+//Owl Slider
+$owl-theme-color: $brand-primary;
+
+//Portfolio
+
+// Background colors 1&2 are brand-primary and brand-secondary.
+$background-color-3: #d30202;
+$background-color-4: #d30202;
+
+// Typography
+// =========================
+
+$font-size-base: 1.3em !default;
+$line-height-base: 1.5 !default;
+
+// Layout
+//=========================
+
+// Navbar
+$header-margin: 30px 0px; // Controls the height of the Header, while it keeps the elements centered
+
+$logo-image-max-height: 50px;
+$logo-image-max-height-sm: 25px;
+$logo-image-max-height-xs: 25px;
+
+// Sections
+$section-padding: 96px 0px;
+$section-padding-short: 60px 0;
+$section-padding-tiny: 24px 0;
+$section-short-top: 60px 0px 116px 0px;
+$section-short-bottom: 1166px 0px 60px 0px;
+
+// Footer
+$footer-height: 420px;
+$footer-padding: 96px 0px 0px 0px;
+$footer-background-color: #2b2b2b;
+
+// Core variables overrides
+//=========================
+
+$border-radius-base: 0;
+$border-radius-small: 0;
+$border-radius-large: 0;
+
+.custom-transition {
+            -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.155, 0.845); 
+            -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.155, 0.845); 
+            -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.155, 0.845); 
+            transition: all 500ms cubic-bezier(0.250, 0.250, 0.155, 0.845); /* custom */
+            -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.155, 0.845); 
+            -moz-transition-timing-function: cubic-bezier(0.250, 0.250, 0.155, 0.845); 
+            -o-transition-timing-function: cubic-bezier(0.250, 0.250, 0.155, 0.845); 
+            transition-timing-function: cubic-bezier(0.250, 0.250, 0.155, 0.845); /* custom */
+}

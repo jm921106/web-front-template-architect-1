@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head
+	body
+		include templates/navigation
+		//-include templates/loader
+		//-include templates/grid-lines
+		.container-fluid.relative(style="background-image: url(assets/images/header-10.jpg)").background-image-center
+			.section-overlay
+			.row
+				.height-50.aligner
+					a(href="#section-to-scroll").scroll-down-icon SCROLL
+					.col-md-6.line-left
+						.text-block.header.alternative
+							h1 MASONRY.
+					.col-md-3.line-left
+						.text-block.alternative
+							.line-thick
+						.header-secondary 
+							a(href="index.html") HOME
+							span / PORTFOLIO-MASONRY
+		section.section.section-semi-white#section-to-scroll
+			.container-fluid
+				.row
+					.col-md-8.col-md-offset-2
+						.row
+							.col-md-12
+								.section-head
+									span .01
+									h3 OUR PROJECTS
+							.col-md-12.padded
+								.text-block
+									h5 TOP RATED PROJECTS
+									p.no-margin  Our work presented in a masonry style
+							.col-md-12
+								.masonry-grid.row
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-1.jpg", alt="Portfolio Image")
+											.masonry-item-overlay.background-color-3
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOUSE
+														p INTERIOR DESIGN
+														span
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-2.jpg", alt="Portfolio Image")
+											.masonry-item-overlay
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOUSE
+														p INTERIOR DESIGN
+														span		
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-3.jpg", alt="Portfolio Image")
+											.masonry-item-overlay.background-color-3
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOTEL
+														p INTERIOR DESIGN
+														span
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-4.jpg", alt="Portfolio Image")
+											.masonry-item-overlay
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOUSE
+														p INTERIOR DESIGN
+														span
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-5.jpg", alt="Portfolio Image")
+											.masonry-item-overlay.background-color-3
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOTEL
+														p INTERIOR DESIGN
+														span
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-6.jpg", alt="Portfolio Image")
+											.masonry-item-overlay
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOUSE
+														p INTERIOR DESIGN
+														span
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-7.jpg", alt="Portfolio Image")
+											.masonry-item-overlay
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOTEL
+														p INTERIOR DESIGN
+														span
+									.masonry-grid-item.col-md-6
+										a(href="portfolio-single.html")
+											img(src="assets/images/portfolio-masonry-8.jpg", alt="Portfolio Image")
+											.masonry-item-overlay.background-color-3
+												.masonry-item-overlay-inner.aligner
+													.text-center
+														h2 LUXURY HOUSE
+														p INTERIOR DESIGN
+														span
+		include templates/footer.jade
+		include templates/scripts.jade
+		//- include templates/script-slider.jade
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

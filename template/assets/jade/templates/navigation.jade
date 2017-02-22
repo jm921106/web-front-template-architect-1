@@ -1,0 +1,48 @@
+//- NAVIGATION MENU
+header.main-navigation
+	.container-fluid
+		.col-xs-4
+			a(href="index.html").logo
+				img(src="assets/images/logo/logo-white.png", alt="Logo").img-circle
+		.col-xs-8.text-right
+			a(href="#!")#nav-toggle.menu-right.toggle-menu
+				span
+			a(href="#!").search
+	//- Sidebar menu
+	nav.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right
+		a(href="index.html").logo
+			img(src="assets/images/logo/logo-white.png", alt="Logo").img-circle
+		#cssmenu
+			ul
+				li
+					a(href="#!").has-sub HOME
+					ul
+						li
+							a(href="index.html").transition.link  SLIDER
+						li
+							a(href="home-video.html").transition.link VIDEO
+				li
+					a(href="about.html").transition.link  ABOUT
+				li
+					a(href="services.html").transition.link  SERVICES
+				li
+					a(href="#!").has-sub PORTFOLIO
+					ul
+						li
+							a(href="port-list.html").transition.link  MASONRY
+						li
+							a(href="portfolio-grid-3-col.html").transition.link  3 COLUMNS
+						li
+							a(href="port-item.html").transition.link  SINGLE
+				li
+					a(href="#!").has-sub BLOG
+					ul
+						li
+							a(href="blog.html").transition.link  GRID
+						li
+							a(href="board.html").transition.link  FULLWIDTH
+						li
+							a(href="blog-single.html").transition.link  SINGLE
+				li
+					a(href="contact.html").transition.link  CONTACT
+			span  Copyrights &copy; 2016 &middot; Crafted with <i class="icon-heart"></i> by <a href="http://andrewch.eu">Andrewch</a>

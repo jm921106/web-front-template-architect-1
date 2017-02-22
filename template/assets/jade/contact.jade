@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head
+	body
+		include templates/navigation
+		//-include templates/loader
+		//-include templates/grid-lines
+		.container-fluid.relative(style="background-image: url(assets/images/header-8.jpg)").background-image-center
+			.section-overlay
+			.row
+				.height-50.aligner
+					a(href="#section-to-scroll").scroll-down-icon SCROLL
+					.col-md-6.line-left
+						.text-block.header.alternative
+							h1 CONTACT.
+					.col-md-3.line-left
+						.text-block.alternative
+							.line-thick
+						.header-secondary 
+							a(href="index.html") HOME
+							span / CONTACT
+		section.section.section-semi-white#section-to-scroll
+			.container-fluid
+				.row
+					.col-md-8.col-md-offset-2
+						.row
+							.col-md-12
+								.section-head
+									span .01
+									h3 REACH US
+							.col-md-6.padded
+								.text-block
+									h5 OPENING HOURS
+									p.no-margin  Our studio is opened everyday on morning and evening hours and saturdays on morning times only. 
+							.col-md-6
+								.row
+									.col-md-6
+										.icon-block
+											i.icon-telephone
+											h4 TELEPHONE
+											p.text-justify We us fifth sea have face which male.
+									.col-md-6
+										.icon-block
+											i.icon-map1
+											h4 LOCATION
+											p.text-justify And us fifth sea have face among them all.
+		section.section-nopadding.section-semi-white
+			.container-fluid
+				.row
+					.col-md-12.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+						.google-map#map(style="height: 500px")
+		section.section.section-white.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+			.container-fluid
+				.row
+					.col-md-6.col-md-offset-3
+						.row
+							.col-md-8.col-md-offset-2.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+								//-p.lead.opacity-07.text-center.padding-bottom We usually response back to 1-2 bussiness days.
+								form#contact_form.contact-form(method="POST")
+									input.form-control(type="text", name="name" placeholder="YOUR NAME")
+									input.form-control(type="email", name="email" placeholder="YOUR E-MAIL")
+									textarea.form-control(placeholder="YOUR MESSAGE", name="message")
+									button.contact-form-submit(type="submit") SEND YOUR MESSAGE
+									#messages.col-md-12
+		include templates/footer.jade
+		include templates/scripts.jade
+		//- include templates/script-slider.jade
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

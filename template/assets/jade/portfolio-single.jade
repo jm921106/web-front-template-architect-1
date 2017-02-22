@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head
+	body
+		include templates/navigation
+		//-include templates/loader
+		//-include templates/grid-lines
+		.container-fluid.relative(style="background-image: url(assets/images/header-11.jpg)").background-image-center
+			.section-overlay
+			.row
+				.height-50.aligner
+					a(href="#section-to-scroll").scroll-down-icon SCROLL
+					.col-md-6.line-left
+						.text-block.header.alternative
+							h1 SINGLE PROJECT.
+					.col-md-3.line-left
+						.text-block.alternative
+							.line-thick
+						.header-secondary 
+							a(href="index.html") HOME
+							span / PORTFOLIO-MASONRY
+		section.section.section-semi-white#section-to-scroll
+			.container-fluid
+				.row
+					.col-md-8.col-md-offset-2
+						.row
+							.col-md-12
+								.section-head
+									span .01
+									h3 INTERIOR DESIGN
+							.col-md-4.padded
+								.text-block
+									//-h5 TOP RATED PROJECTS
+									p.no-margin  We worked over a strict program and tight deadline on a super <strong>exciting project</strong>, you can check out the result below.
+							.col-md-8
+								.row
+									.col-md-5.col-md-offset-1
+										.icon-block
+											i.icon-upload2
+											h4 STATUS
+											p.text-justify Completed and shipped.									
+									.col-md-6
+										.icon-block
+											i.icon-user1
+											h4 CLIENT
+											p.text-justify Remark Solutions LTD.
+							.col-md-12.margin-top
+								img(src="assets/images/portfolio-single-1.jpg", alt="Portfolio image")
+							.col-md-12.margin-top
+								img(src="assets/images/portfolio-single-2.jpg", alt="Portfolio image")
+							.col-md-6.col-md-offset-3.margin-top-big
+								blockquote When the project arrived we thought: "Arriving at one goal is the starting point to another".
+									small David Nazghul
+							.col-md-4.margin-top
+								.zoom-gallery
+									a(href="assets/images/portfolio-grid-3.jpg" data-source="assets/images/portfolio-grid-3.jpg")
+										img(src="assets/images/portfolio-grid-3.jpg", alt="Portfolio popup")
+							.col-md-4.margin-top
+								.zoom-gallery
+									a(href="assets/images/portfolio-grid-5.jpg" data-source="assets/images/portfolio-grid-5.jpg")
+										img(src="assets/images/portfolio-grid-5.jpg", alt="Portfolio popup")
+							.col-md-4.margin-top
+								.zoom-gallery
+									a(href="assets/images/portfolio-grid-4.jpg" data-source="assets/images/portfolio-grid-4.jpg")
+										img(src="assets/images/portfolio-grid-4.jpg", alt="Portfolio popup")
+							.col-md-12.margin-top
+								ul.work-post-social
+									li
+										a(href="#!") TWITTER
+									li
+										a(href="#!") FACEBOOK
+									li
+										a(href="#!") GOOGLE PLUS
+		include templates/footer.jade
+		include templates/scripts.jade
+		//- include templates/script-slider.jade
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		//- script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

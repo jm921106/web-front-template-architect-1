@@ -1,0 +1,182 @@
+/* BLOG */
+/* ===================================== */
+
+.blog-post {
+	.blog-post-info {
+		font-weight: 700;
+		position: relative;
+		span {
+			padding-bottom: 10px;
+			display: block;
+		}
+		a {
+			color: rgba($text-color, .7);
+			&:hover {
+				color: $brand-primary
+			}
+		}
+	}
+	img {
+		width: 100%;
+	}
+	.blog-post-details {
+		h3 {
+			font-weight: 900;
+			margin-top: 30px;
+			a{
+				color: rgba($text-color, 1);
+				&:hover {
+					color: $brand-primary
+				}
+			}
+		}
+		p {
+			margin-top: 7px;
+		}
+	}
+	hr {
+		margin-bottom: 35px;
+		margin-top: 26px;
+		opacity: .5;
+	}
+}
+
+/* - Single Post - */
+
+.blog-post-single-details {
+	opacity: .9;
+	a {
+		color: $brand-secondary;
+		&:hover {
+			color: $brand-primary;
+		}
+	}
+	span {
+		margin-top: 24px;
+		display: block;
+		@extend .title-space;
+		margin-bottom: 2px;
+		color: $brand-2-primary;
+		// &.ann {
+		// 	font-size: 13px;
+		// 	letter-spacing: 0px;
+		// 	color: $text-color;
+		// 	position: absolute;
+		// 	left: -160px;
+		// 	text-transform: none;
+		// 	font-style: italic;
+		// }
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 14px;
+		margin-top: 40px;
+	}
+	p {
+		margin-top: 24px;
+	}
+	h3 {
+		font-weight: 700;
+		margin-top: 48px;
+	}
+	img {
+		margin-bottom: 24px;
+	}
+	hr {
+		opacity: .8;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 900;
+		margin-bottom: 24px;
+	}
+	ul {
+		@extend .list-reset;
+		margin-top: 24px;
+		li {
+			margin: 5px 0;
+			&:before {
+				content: '- ';
+			}
+		}
+	}
+	img {
+		width:100%;
+	}
+}
+
+
+/* - Author - */
+
+.post-author {
+	h4 {
+		vertical-align: middle;
+		display: inline-block;	
+		color: $text-color;
+		@include transition(.2s);
+		padding-left: 5px;
+		font-weight: 700;
+		&:hover {
+			color: $brand-primary;
+		}
+		&:before {
+			content:'AUTHOR';
+			display: block;
+			font-size: 11px;
+			font-weight: 200;
+			letter-spacing: 3px;
+			line-height: 0;
+			margin-bottom: 4px;
+			color: rgba(#000, .4)
+		}
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		display: block;
+		width: 23px;
+		height: 7px;
+		background-color: $text-color;
+		left: -45px;
+		top: 20px;
+	}
+}
+
+/* - Social - */
+
+hr {
+	opacity: .5;
+}
+
+.post-social {
+	@extend .list-reset;
+	margin-top: -3px;
+	li {
+		display: inline-block;
+		margin-left: 20px;
+		padding-top: 5px;
+		a {
+			color: $text-color;
+			font-weight: 600;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+	}
+	li:first-child:before {
+		content:'SHARE';
+		display: block;
+		font-size: 11px;
+		font-weight: 200;
+		letter-spacing: 3px;
+		line-height: 19px;
+		position: relative;
+		display: block;
+		color: rgba(#000, .4);
+		text-align: left;
+	}	
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head
+	body
+		include templates/navigation
+		//-include templates/loader
+		.container-fluid.relative(style="background-image: url(assets/images/header-7.jpg)").background-image-center
+			.section-overlay
+			.row
+				.height-50.aligner
+					a(href="#section-to-scroll").scroll-down-icon SCROLL
+					.col-md-6.line-left
+						.text-block.header.alternative
+							h1 BLOG GRID.
+					.col-md-3.line-left
+						.text-block.alternative
+							.line-thick
+						.header-secondary 
+							a(href="index.html") HOME
+							span / BLOG GRID
+		section.section.section-white#section-to-scroll
+			.container-fluid
+				.row
+					.col-md-8.col-md-offset-2
+						.row
+							.col-md-12
+								.section-head
+									span .02
+									h3 BLOG
+							.col-md-4
+								article.blog-post
+									.blog-post-info
+										span <a href="#!">APARTMENTS</a> &middot; <a href="#!">12 JANUARY</a>
+									a(href="blog-single.html")
+										img(src="assets/images/blog-1.jpg", alt="Blog post image")
+									.blog-post-details
+										h3
+											a(href="blog-single.html") TURN PAPER TO A HOUSE
+										p.text-justify Likeness rule. Moved whales. Likeness. Created sea our night said after called bearing male great seasons fruit cattle yielding one a you image man kind after was female which shall. Tree. Moving subdue that i yielding they're seed darkness his.
+										a.btn.btn-link(href="blog-single.html") READ MORE
+									hr
+							.col-md-4
+								article.blog-post
+									.blog-post-info
+										span <a href="#!">EXTERIOR DESIGN</a> &middot; <a href="#!">14 JANUARY</a>
+									a(href="blog-single.html")
+										img(src="assets/images/blog-2.jpg", alt="Blog post image")
+									.blog-post-details
+										h3
+											a(href="blog-single.html") IT'S ALL ABOUT THIS
+										p.text-justify Likeness rule. Moved whales. Likeness. Created sea our night said after called bearing male great seasons fruit cattle yielding one a you image man kind after was female which shall. Tree. Moving subdue that i yielding they're seed darkness his.
+										a.btn.btn-link(href="blog-single.html") READ MORE
+									hr
+							.col-md-4
+								article.blog-post
+									.blog-post-info
+										span <a href="#!">HOTEL DESIGN</a> &middot; <a href="#!">19 JANUARY</a>
+									a(href="blog-single.html")
+										img(src="assets/images/blog-3.jpg", alt="Blog post image")
+									.blog-post-details
+										h3
+											a(href="blog-single.html") 5 TIPS FOR EVERYONE
+										p.text-justify Likeness rule. Moved whales. Likeness. Created sea our night said after called bearing male great seasons fruit cattle yielding one a you image man kind after was female which shall. Tree. Moving subdue that i yielding they're seed darkness his.
+										a.btn.btn-link(href="blog-single.html") READ MORE
+									hr
+							.col-md-4.margin-top
+								article.blog-post
+									.blog-post-info
+										span <a href="#!">MARKETING</a> &middot; <a href="#!">22 JANUARY</a>
+									a(href="blog-single.html")
+										img(src="assets/images/blog-4.jpg", alt="Blog post image")
+									.blog-post-details
+										h3
+											a(href="blog-single.html") MAKE IT BEATIFUL
+										p.text-justify Likeness rule. Moved whales. Likeness. Created sea our night said after called bearing male great seasons fruit cattle yielding one a you image man kind after was female which shall. Tree. Moving subdue that i yielding they're seed darkness his.
+										a.btn.btn-link(href="blog-single.html") READ MORE
+									hr
+							.col-md-4.margin-top
+								article.blog-post
+									.blog-post-info
+										span <a href="#!">AWARDS</a> &middot; <a href="#!">25 JANUARY</a>
+									a(href="blog-single.html")
+										img(src="assets/images/blog-5.jpg", alt="Blog post image")
+									.blog-post-details
+										h3
+											a(href="blog-single.html") THE PERFECT STRATEGY
+										p.text-justify Likeness rule. Moved whales. Likeness. Created sea our night said after called bearing male great seasons fruit cattle yielding one a you image man kind after was female which shall. Tree. Moving subdue that i yielding they're seed darkness his.
+										a.btn.btn-link(href="blog-single.html") READ MORE
+									hr
+							.col-md-4.margin-top
+								article.blog-post
+									.blog-post-info
+										span <a href="#!">ARCHITECTURE DESIGN</a> &middot; <a href="#!">26 JANUARY</a>
+									a(href="blog-single.html")
+										img(src="assets/images/blog-6.jpg", alt="Blog post image")
+									.blog-post-details
+										h3
+											a(href="blog-single.html") COMES CREATION
+										p.text-justify Likeness rule. Moved whales. Likeness. Created sea our night said after called bearing male great seasons fruit cattle yielding one a you image man kind after was female which shall. Tree. Moving subdue that i yielding they're seed darkness his.
+										a.btn.btn-link(href="blog-single.html") READ MORE
+									hr
+							.col-md-12
+								ul.pagination
+									li
+										a(href="#!") 1
+									li
+										a(href="#!") 2
+		include templates/footer.jade
+		include templates/scripts.jade
